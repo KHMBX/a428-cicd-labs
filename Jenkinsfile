@@ -1,4 +1,4 @@
-lnv@LNV25U:~/Documents/react/a428-cicd-labs$ cat Jenkinsfile 
+
     pipeline {
         agent {
             docker {
