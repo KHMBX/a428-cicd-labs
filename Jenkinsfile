@@ -18,6 +18,7 @@
             }
         }
         
+        sleep 1
             
         stage('Deploy') {
             steps {
