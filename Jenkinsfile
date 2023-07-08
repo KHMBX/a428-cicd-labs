@@ -18,6 +18,12 @@
                 sleep 1
             }
         }
+
+        stage('Manual Approval') {
+            steps {
+                 input message: 'Lanjutkan ke tahap Deploy? (Klik "Abort" untuk mengakhiri)'
+            }
+        }
         
        
             
