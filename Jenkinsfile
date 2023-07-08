@@ -17,6 +17,14 @@
                 sh './jenkins/scripts/test.sh'
             }
         }
+        
+        sleep {
+          "wait_ten_seconds": {
+          "Type": "Wait",
+          "Seconds": 10,
+          "Next": "NextState"
+        }
+            
         stage('Deploy') {
             steps {
                 sh './jenkins/scripts/deliver.sh'
