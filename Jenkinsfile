@@ -18,10 +18,14 @@
             }
         }
         
-        "sleep_ten_seconds": {
-          "Type": "Wait",
-          "Seconds": 10,
-          "Next": "NextState"
+       sleep('sleep') {
+            steps {
+               "wait_ten_seconds": {
+              "Type": "Wait",
+              "Seconds": 10,
+              "Next": "NextState"
+        }
+            }
         }
             
         stage('Deploy') {
