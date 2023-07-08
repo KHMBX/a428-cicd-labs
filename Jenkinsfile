@@ -15,10 +15,11 @@
         stage('Test') {
             steps {
                 sh './jenkins/scripts/test.sh'
+                sleep 1
             }
         }
         
-        sleep 1
+       
             
         stage('Deploy') {
             steps {
