@@ -19,7 +19,7 @@
         }
         
         sleep {
-          "wait_ten_seconds": {
+          "wait_ten_seconds": 
           "Type": "Wait",
           "Seconds": 10,
           "Next": "NextState"
